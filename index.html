@@ -34,28 +34,31 @@
   <body>
     <!--Introduction Part-->
     <div class="container">
-      <img class="logo" src="/images/logo.svg" alt="logo" />
+      <div class="page-logo">
+        <img src="/images/logo.svg" alt="logo" />
+      </div>
 
-      <h1 class="heading">We are launching <span class="bold">soon!</span></h1>
+      <div class="page-info">
+        <h1>We are launching <span class="bold">soon!</span></h1>
 
-      <p class="sub-heading">Subscribe and get notified</p>
+        <p>Subscribe and get notified</p>
+      </div>
 
       <!--Registration Part-->
-      <div class="registeration">
+      <form class="registration">
         <input
-          class="register"
           type="email"
           name="email-address"
           placeholder="Your email address..."
           required
         />
 
-        <button class="btn" type="submit">Notify Me</button>
-      </div>
+        <button class="submit" type="submit">Notify Me</button>
+      </form>
 
       <!--Illustration Dashboard Image-->
-      <div>
-        <img class="displayed-image" src="/images/illustration-dashboard.png" />
+      <div class="displayed-image">
+        <img src="/images/illustration-dashboard.png" alt="Illustration" />
       </div>
 
       <!--Ending Part-->
