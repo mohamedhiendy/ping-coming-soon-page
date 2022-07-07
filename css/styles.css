@@ -10,8 +10,13 @@ font-family: 'Libre Franklin', sans-serif;
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
-  /* font-family: "Libre Franklin", sans-serif; */
+  font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
 }
 
@@ -19,7 +24,7 @@ body {
   width: 100%;
   height: auto;
 
-  padding: 110px 30px 30px;
+  padding: 85px 30px 30px;
 
   display: flex;
   justify-content: center;
@@ -28,60 +33,204 @@ body {
   flex-direction: column;
 }
 
-.logo {
-  margin: 0 0 50px 0;
+.page-logo {
+  margin: 0 0 40px 0;
 }
 
-.heading {
+.page-info h1 {
   width: 100%;
 
-  margin: 0 0 20px 0;
-
-  font-family: sans-serif;
+  margin: 0 0 15px 1px;
   font-weight: 400;
   font-size: 49px;
 
   color: hsl(0, 0%, 59%);
 }
 
-.bold {
+.page-info h1 .bold {
   font-weight: 700;
 
-  color: black;
+  color: hsl(209, 33%, 12%);
 }
 
-.sub-heading {
-  font-family: "Libre Franklin", sans-serif;
+.page-info p {
   font-size: 20px;
 
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
 }
 
-/* .registration {
-    
-  } */
+.registration {
+  width: 100%;
 
-.register {
-  width: 420px;
-  height: 55px;
+  margin: 0 0 90px 0;
+}
 
-  border-radius: 20px;
+.registration input {
+  width: 31%;
+  height: 60px;
 
-  margin-right: 10px;
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 30px;
+
+  margin-right: 12px;
   padding: 15px;
 
   font-size: 20px;
 }
 
-.btn {
-  width: 200px;
+.registration .submit {
+  width: 15%;
   height: 55px;
 
-  border-radius: 20px;
+  background-color: hsl(223, 87%, 63%);
 
-  font-size: 20px;
+  border: 1px solid hsl(223, 87%, 63%);
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+  color: white;
+}
+
+.registration .submit:hover {
+  color: white;
+  background-color: hsl(223, 100%, 88%);
+
+  border: 1px solid hsl(223, 100%, 88%);
 }
 
 .displayed-image {
-  width: 50%;
+  width: 46%;
+
+  margin-bottom: 60px;
+}
+
+.social-media ion-icon[name="logo-facebook"],
+ion-icon[name="logo-twitter"] {
+  margin-right: 20px;
+}
+
+.facebook-logo,
+.twitter-logo {
+  margin-right: 15px;
+}
+
+.facebook-logo,
+.twitter-logo,
+.instagram-logo {
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 15px;
+
+  width: 30px;
+  height: 30px;
+
+  margin-bottom: 30px;
+
+  cursor: pointer;
+
+  display: inline-block;
+}
+
+.social-media p {
+  font-size: 13px;
+}
+
+.social-media .facebook.f.icon,
+.twitter.icon,
+.instagram.icon {
+  color: hsl(223, 87%, 63%);
+}
+
+.social-media .facebook.f.icon:hover,
+.instagram.icon:hover,
+.twitter.icon:hover {
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    padding-top: 170px;
+  }
+
+  .page-logo {
+    width: 100px;
+    height: 100px;
+
+    margin-bottom: 5px;
+  }
+
+  .page-info h1 {
+    font-size: 46px;
+
+    margin-bottom: 30px;
+  }
+
+  .page-info p {
+    font-size: 24px;
+
+    margin-bottom: 65px;
+  }
+
+  .registration input {
+    width: 81%;
+    height: 78px;
+
+    font-size: 38px;
+
+    border-radius: 30px;
+
+    margin: 0 auto 20px;
+
+    display: block;
+  }
+
+  .registration .submit {
+    width: 81%;
+    height: 78px;
+
+    font-size: 27px;
+
+    border-radius: 30px;
+
+    margin: 0 auto 46px;
+
+    display: block;
+  }
+
+  .displayed-image {
+    width: 92%;
+
+    margin-bottom: 250px;
+  }
+
+  .facebook-logo,
+  .twitter-logo,
+  .instagram-logo {
+    width: 50px;
+    height: 50px;
+
+    margin-bottom: 55px;
+  }
+
+  .facebook-logo,
+  .twitter-logo {
+    margin-right: 30px;
+  }
+
+  .social-media .facebook.f.icon,
+  .twitter.icon,
+  .instagram.icon {
+    padding: 8px 0px 5px;
+  }
+
+  .social-media p {
+    font-size: 20px;
+  }
 }
